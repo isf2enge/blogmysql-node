@@ -1,0 +1,12 @@
+<h4>Postagens: </h4>
+{{#each admins}}
+    <p>Titulo: {{Titulo}}</p>
+    <p>Conteudo: {{Conteudo}}</p>
+    <br>
+    <a href="/admin/edit/{{id}}"><button type="submit" class="btn btn-success">Editar</button></a>
+    <a href="/admin/delete/{{id}}"><button type="submit" class="btn btn-danger">Deletar</button></a>
+    <hr>
+{{else}}
+
+    <h4>Não há postagens</h4>
+{{/each}}
